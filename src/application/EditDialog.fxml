@@ -1,0 +1,60 @@
+
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<AnchorPane prefHeight="380.0" prefWidth="480.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.EditDialog">
+<children><GridPane layoutX="10.0" layoutY="14.0" prefHeight="310.0" prefWidth="460.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="14.0">
+  <columnConstraints>
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="175.0" minWidth="10.0" prefWidth="166.0" />
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="314.0" minWidth="10.0" prefWidth="294.0" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints maxHeight="54.0" minHeight="10.0" prefHeight="46.0" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="87.0" minHeight="10.0" prefHeight="84.0" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="111.0" minHeight="10.0" prefHeight="84.0" vgrow="SOMETIMES" />
+<RowConstraints maxHeight="148.0" minHeight="10.0" prefHeight="95.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+<children><Label text="Name" /><TextField fx:id="NameField" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="36.0" prefWidth="296.0" GridPane.columnIndex="1" /><Label text="Time of beginning" GridPane.rowIndex="1" /><Label text="Time of ending" GridPane.rowIndex="2" /><Label text="Description" GridPane.rowIndex="3" /><TextField fx:id="descField" alignment="TOP_LEFT" prefHeight="46.0" prefWidth="295.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <GridPane GridPane.columnIndex="1" GridPane.rowIndex="1">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="142.0" minWidth="10.0" prefWidth="53.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="242.0" minWidth="10.0" prefWidth="241.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <TextField fx:id="st1" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="37.0" prefWidth="46.0" />
+                  <TextField fx:id="st2" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="37.0" prefWidth="46.0" GridPane.columnIndex="1" />
+               </children>
+            </GridPane>
+            <GridPane GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <children>
+                  <TextField fx:id="fi1" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="37.0" prefWidth="46.0" />
+                  <TextField fx:id="fi2" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="37.0" prefWidth="46.0" GridPane.columnIndex="1" />
+               </children>
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="142.0" minWidth="10.0" prefWidth="53.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="242.0" minWidth="10.0" prefWidth="241.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+            </GridPane>
+</children>
+</GridPane>
+<HBox layoutX="197.1875" layoutY="241.0" prefHeight="39.0" prefWidth="222.0" spacing="5.0" AnchorPane.bottomAnchor="10.0" AnchorPane.rightAnchor="10.0">
+<children><Button fx:id="Okbutton" layoutX="197.1875" layoutY="241.0" mnemonicParsing="false" onAction="#handleOk" prefHeight="39.0" prefWidth="107.0" text="OK" /><Button layoutX="249.375" layoutY="241.0" mnemonicParsing="false" onAction="#handleCancel" prefHeight="39.0" prefWidth="108.0" text="Close" />
+</children>
+</HBox>
+</children></AnchorPane>
